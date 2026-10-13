@@ -1,0 +1,61 @@
+/* Container for the whole list */
+.books-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual book card */
+.book-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid #eaeaea;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Hover effect */
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Book Title */
+.book-card h2 {
+    font-size: 1.25rem;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+/* Author and Year text */
+.book-card p {
+    color: #555;
+    font-size: 0.95rem;
+    margin: 4px 0 16px 0;
+}
+
+/* Delete Button Styling */
+.book-card button {
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    align-self: flex-start;
+}
+
+/* Delete Button Hover Effect */
+.book-card button:hover {
+    background-color: #d9363e;
+}
