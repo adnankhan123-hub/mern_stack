@@ -1,0 +1,7 @@
+Backend/node_modules/
+fronted/fronted/node_modules/
+.env
+Backend/.env
+fronted/fronted/.env
+fronted/fronted/dist/
+fronted/fronted/build/
